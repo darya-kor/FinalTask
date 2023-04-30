@@ -35,7 +35,7 @@ namespace FinalTask
 
         public static async void WriteStudents(Student student)
         {
-            using (StreamWriter writer = new StreamWriter(@$"C:\Users\balak\OneDrive\Рабочий стол\Students\{student.Group}.txt", false))
+            using (StreamWriter writer = new StreamWriter(@$"C:\Users\balak\OneDrive\Рабочий стол\Students\{student.Group}.txt", true))
             {
                 await writer.WriteLineAsync($"Student: {student.Name}, Birthday: {student.DateOfBirth}");
             }
